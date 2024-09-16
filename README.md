@@ -45,6 +45,7 @@ catkin_make
 ## Usage:
 ```
 roslaunch pedsim_simulator robot.launch
+roslaunch robot_gazebo view_navigation.launch
 ```
 
 ## Acknowledgements
