@@ -60,7 +60,8 @@ namespace rviz
 /** @brief Helper superclass for AdditionalTopicSubscriber, needed because
  * Qt's moc and c++ templates don't work nicely together.  Not
  * intended to be used directly. */
-class _AdditionalTopicSubscriber: public QObject // xzt: fixed the incompatibility issue between the latest rviz version and QT
+// xzt: fixed the incompatibility issue between the latest rviz version and QT by replacing the QObject with public QObject
+class _AdditionalTopicSubscriber: public QObject 
 {
 Q_OBJECT
 public:
