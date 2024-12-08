@@ -36,13 +36,15 @@ mkdir src
 cd src
 git clone https://github.com/TempleRAIL/robot_gazebo.git
 git clone https://github.com/TempleRAIL/pedsim_ros_with_gazebo.git
-wget https://raw.githubusercontent.com/zzuxzt/turtlebot2_noetic_packages/master/turtlebot2_noetic_install.sh 
+wget https://raw.githubusercontent.com/zzuxzt/turtlebot2_noetic_packages/master/turtlebot2_noetic_install.sh
+chmod +x turtlebot2_noetic_install.sh 
 sudo sh turtlebot2_noetic_install.sh 
 cd ..
 catkin_make
 ```
 
 ## Usage:
+More detailed usage can be found in our [DRL-VO control policy](https://github.com/TempleRAIL/drl_vo_nav.git).
 ```
 roslaunch pedsim_simulator robot.launch
 roslaunch robot_gazebo view_navigation.launch
