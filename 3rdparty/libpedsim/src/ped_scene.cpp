@@ -216,3 +216,4 @@ void Ped::Tscene::getNeighbors(vector<const Ped::Tagent*>& neighborList,
     }
   }
 }
+
