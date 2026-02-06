@@ -35,12 +35,12 @@
 Config* Config::Config::instance = nullptr;
 
 Config::Config(QObject* parent) {
-  updateRate = 25.0;
+  updateRate = 30.0;
   simulationFactor = 1.0;
 
   forceObstacle = 10.0;
   sigmaObstacle = 0.2;
-  forceSocial = 5.1;
+  forceSocial = 8.0;
 
   forceGroupGaze = 3.0;
   forceGroupCoherence = 2.0;

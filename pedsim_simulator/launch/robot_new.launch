@@ -65,7 +65,7 @@
     <param name="enable_groups" value="$(arg enable_groups)" type="bool"/>
     <param name="simulation_factor" value="$(arg simulation_factor)" type="double"/>
     <param name="update_rate" value="$(arg update_rate)" type="double"/>
-    <param name="frame_id"  value="gazebo" />
+    <param name="frame_id"  value="map" />
   </node>
 
   <!-- Visualizer -->

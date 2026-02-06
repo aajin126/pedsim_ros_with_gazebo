@@ -159,7 +159,7 @@ void Agent::move(double h) {
       // position in hash tree) without actually moving it
 
       // changed by xzt:
-      Ped::Tagent::setVmax(0.65);
+      Ped::Tagent::setVmax(1.0);
       const double vx = getvx();
       const double vy = getvy();
 
@@ -187,8 +187,20 @@ void Agent::move(double h) {
 
   if (getType() == Ped::Tagent::ELDER) {
     // Old people slow!
-    Ped::Tagent::setVmax(0.9);
+    Ped::Tagent::setVmax(0.2);
     Ped::Tagent::setForceFactorDesired(0.5);
+  }
+
+  if (getType() == Ped::Tagent::CHILD) {
+    // Children are faster and more agile
+    Ped::Tagent::setVmax(0.7);
+    Ped::Tagent::setForceFactorDesired(1.2);
+  }
+
+  if (getType() == Ped::Tagent::ADULT) {
+    // Adults are normal
+    Ped::Tagent::setVmax(0.5);
+    Ped::Tagent::setForceFactorDesired(2.0);
   }
 
   // inform users

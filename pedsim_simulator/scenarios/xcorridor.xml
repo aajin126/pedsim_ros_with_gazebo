@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+  <!--Obstacles-->
+  <obstacle x1="-0.7071" y1="-1.4142" x2="1.4142" y2="0.7071"/>
+  <obstacle x1="-1.4142" y1="-0.7071" x2="0.7071" y2="1.4142"/>
+  <obstacle x1="-0.7071" y1="1.4142" x2="1.4142" y2="-0.7071"/>
+  <obstacle x1="-1.4142" y1="0.7071" x2="0.7071" y2="-1.4142"/>
+  
+  <!-- Waypoint -->
+  <waypoint id="wp_NE" x="1.2"  y="1.2"  r="0.3"/>
+  <waypoint id="wp_NW" x="-1.2" y="1.2"  r="0.3"/>
+  <waypoint id="wp_SE" x="1.2"  y="-1.2" r="0.3"/>
+  <waypoint id="wp_SW" x="-1.2" y="-1.2" r="0.3"/>
+  <waypoint id="wp_center" x="0.0" y="0.0" r="0.4"/>
+
+  <!--AgentClusters-->
+  <agent x="-1.2" y="-1.2" n="15" dx="0.4" dy="0.4" type="0">
+    <addwaypoint id="wp_center"/>
+    <addwaypoint id="wp_NE"/>
+  </agent>
+  
+  <agent x="1.2" y="1.2" n="15" dx="0.4" dy="0.4" type="0">
+    <addwaypoint id="wp_center"/>
+    <addwaypoint id="wp_SW"/>
+  </agent>
+
+  <agent x="-1.2" y="1.2" n="15" dx="0.4" dy="0.4" type="0">
+    <addwaypoint id="wp_center"/>
+    <addwaypoint id="wp_SE"/>
+  </agent>
+  
+  <agent x="1.2" y="-1.2" n="15" dx="0.4" dy="0.4" type="0">
+    <addwaypoint id="wp_center"/>
+    <addwaypoint id="wp_NW"/>
+  </agent>
+</scenario>
